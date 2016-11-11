@@ -1,8 +1,36 @@
 en:
+  time:
+    formats:
+      short_date: "%d-%m-%Y"
   title: "Workspace Management System"
   home: "HOME"
   contact: "CONTACT"
+  error_text: "error"
+  form_error_messages: "The form contains %{plural}."
   help: "HELP"
+  admin:
+    projects:
+      index:
+        form: "Form :"
+        name: "Name"
+        new_project: "New Subject"
+        abbrevation: "Abbrevation"
+        end_date: "End Date"
+        start_date: "Start Date"
+        actions: "Actions"
+        show: "Show"
+      form:
+        cancel_button: "Cancel"
+        form: "Form"
+        create_project: "Create Project"
+      project:
+        delete_project_confirm: "Are you sure?"
+      new:
+        create_project: "Create Project"
+        create_button: "Create"
+      edit:
+        edit_project: "Edit Project"
+        save_button: "Save"
   static_pages:
     home:
       calender: "Calender"
@@ -73,3 +101,4 @@ en:
     sessions:
       new:
         login: "Login"
+

@@ -2,3 +2,7 @@ role:
   user: user
   admin: admin
   ws_admin: ws_admin
+pagination:
+  per_page: 7
+maximum:
+  leght: 50

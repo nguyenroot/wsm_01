@@ -1,18 +1,23 @@
 $(document).ready(function() {
   var toggle = true;
-    $(".sidebar-icon").click(function() {
+    $('.sidebar-icon').click(function() {
       if (toggle)
       {
-        $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
-        $("#menu span").css({"position":"absolute"});
+        $('.page-container').addClass('sidebar-collapsed').removeClass('sidebar-collapsed-back');
+        $('#menu span').css({'position':'absolute'});
       }
       else
       {
-        $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+        $('.page-container').removeClass('sidebar-collapsed').addClass('sidebar-collapsed-back');
         setTimeout(function() {
-        $("#menu span").css({"position":"relative"});
+        $('#menu span').css({'position':'relative'});
       }, 400);
     }
   toggle = !toggle;
+  });
+
+  $('.datepicker').datetimepicker({
+    useCurrent: false,
+    format: 'YYYY/MM/DD HH:mm'
   });
 });
