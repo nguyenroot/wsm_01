@@ -3,31 +3,232 @@
     <div class="cal-main">
       <div class="calender graph-form">
         <div class="tool-tips">
-          <h3 class="inner-tittle two"><%= t ".simple_tooltips" %></h3>
-          <div class="tool-tips graph-form">
-            <div class="bs-example-tooltips">
-              <button type="button" class="btn btn-default tip"
-                data-toggle="tooltip" data-placement="left"
-                title="" data-original-title="Tooltip on left">
-                <%= t ".tooltip" %>
-              </button>
-              <button type="button" class="btn btn-default tip"
-                data-toggle="tooltip" data-placement="top"
-                title="" data-original-title="Tooltip on top">
-                <%= t ".tooltip_top" %>
-              </button>
-              <button type="button" class="btn btn-default tip"
-                data-toggle="tooltip" data-placement="bottom"
-                title="" data-original-title="Tooltip on bottom">
-                <%= t ".tooltip_bottom" %>
-              </button>
-              <button type="button" class="btn btn-default tip"
-                data-toggle="tooltip" data-placement="right"
-                title="" data-original-title="Tooltip on right">
-                <%= t ".tooltip_right" %>
-              </button>
+<!--
+         <script src="js/responsiveslides.min.js"></script>
+      <script>
+
+          $(function () {
+
+            $("#slider3").responsiveSlides({
+            auto: false,
+            pager:true,
+            nav:true,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+            $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+              $('.events').append("<li>after event fired.</li>");
+            }
+          });
+        });
+      </script>
+
+<div class="banner">
+  <div class="container">
+    <div class="banner-main">
+      <div  id="top" class="callbacks_container">
+        <ul class="rslides" id="slider3">
+          <li>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisc.</h3>
+
+          </li>
+          <li>
+            <h3>Ipsum Lorem  dolor sit amet consectetur adipisc.</h3>
+
+          </li>
+          <li>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisc.</h3>
+
+          </li>
+          <li>
+            <h3>Dolor Lorem ipsum  sit amet consectetur adipisc.</h3>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+</div> -->
+<!--BANNER END HERE-->
+<!--creative start here-->
+<div class="creative">
+  <div class="container">
+    <div class="creative-main">
+      <div class="col-md-6 creative-left">
+      <%= link_to image_tag("pic1.jpg", class:"img-responsive")%>
+
+      </div>
+      <div class="above-creative">
+         <%= link_to image_tag("pic2.jpg", class:"img-responsive")%>
+      </div>
+      <div class="col-md-6 creative-right">
+        <h4>We Are Creative designers</h4>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+       <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+<!--creative end here-->
+<!--welcome start here-->
+
+
+<div class="welcome agileits">
+  <div class="container">
+    <div class="welcome-main">
+      <div class="welcome-top">
+        <h4>Welcome</h4>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto </p>
+      </div>
+      <div class="welcome-bottom">
+        <div class="col-md-4 welcome-grid">
+          <%= link_to image_tag("icn1.png", class:"img-responsive")%>
+
+          <h4>Feature One</h4>
+          <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+        </div>
+        <div class="col-md-4 welcome-grid">
+        <%= link_to image_tag("icn2.png", class:"img-responsive")%>
+
+          <h4>Feature Two</h4>
+          <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+        </div>
+        <div class="col-md-4 welcome-grid">
+        <%= link_to image_tag("icn3.png", class:"img-responsive")%>
+
+          <h4>Feature Three</h4>
+          <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+        </div>
+         <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--welcoome end here-->
+<!--work start here-->
+<div class="work">
+  <div class="container">
+    <div class="work-main">
+      <h3>Are You Impressed By Our Work?</h3>
+      <p>Nor again is there anyone who loves or pursues or desires to obtain pain.</p>
+      <div class="work-btns">
+        <a href="contact.html">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--work end here-->
+<!--look back to our history-->
+<div class="history">
+  <div class="container">
+    <div class="history-main">
+      <div class="history-top">
+        <h3>Look back to our History</h3>
+        <p>Excepteur sint occaecat cupidatat non proident.</p>
+      </div>
+      <div class="history-bottom">
+        <span class="devide-line"> </span>
+         <div class="history-block">
+          <div class="changer-left  histo-agile">
+            <div class="hist-date-strip">
+            <div class="hist-date">
+              <h4>18 SEP</h4>
             </div>
+            <div class="hist-text">
+              <a href="single.html"><h5>sint occaecat cupidatat non</h5></a>
+            </div>
+            <div class="clearfix"> </div>
+             </div>
+            <div class="history-info">
+              <div class="history-info-left">
+                <a href="single.html">
+                 <%= link_to image_tag("s1.jpg", class:"img-responsive")%>
+</a>
+              </div>
+              <div class="history-info-right">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+              </div>
+               <div class="clearfix"> </div>
+            </div>
+            <div class="gd-tl-tip"> </div>
           </div>
+             <div class="clearfix"> </div>
+             <div class="ch-bott1">
+              <span class="botted"> </span>
+             </div>
+         </div>
+         <div class="history-block-snd">
+          <div class="changer-right-snd">
+            <div class="changer-right-snd-strip">
+              <div class="changer-right-snd-text">
+                <a href="single.html"><h5>sint occaecat cupidatat non</h5></a>
+              </div>
+              <div class="changer-right-snd-date">
+                <h4>30 JUL</h4>
+              </div>
+               <div class="clearfix"> </div>
+            </div>
+            <div class="hist-gallery">
+              <div class="hist-gall-grid">
+                <%= link_to image_tag("s6.jpg", class:"img-responsive")%></a>
+              </div>
+              <div class="hist-gall-grid">
+                 <%= link_to image_tag("s2.jpg", class:"img-responsive")%></a>
+              </div>
+              <div class="hist-gall-grid">
+                 <%= link_to image_tag("s3.jpg", class:"img-responsive")%></a>
+              </div>
+              <div class="hist-gall-grid">
+                 <%= link_to image_tag("s4.jpg", class:"img-responsive")%></a>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="gd-tl-tip2"> </div>
+          </div>
+              <div class="clearfix"> </div>
+              <div class="ch-bott1 bott-w3">
+              <span class="botted"> </span>
+             </div>
+        </div>
+        <div class="history-block">
+          <div class="changer-left">
+            <div class="hist-date-strip">
+            <div class="hist-date">
+              <h4>10 JAN</h4>
+            </div>
+            <div class="hist-text">
+              <a href="single.html"><h5>sint occaecat cupidatat non</h5></a>
+            </div>
+            <div class="clearfix"> </div>
+             </div>
+            <div class="history-info">
+              <div class="history-info-left">
+                <a href="single.html"> <%= link_to image_tag("s5.jpg", class:"img-responsive")%></a>
+              </div>
+              <div class="history-info-right">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+              </div>
+               <div class="clearfix"> </div>
+            </div>
+            <div class="gd-tl-tip3"> </div>
+          </div>
+             <div class="clearfix"> </div>
+             <div class="ch-bott1">
+              <span class="botted"> </span>
+             </div>
+         </div>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </div>
