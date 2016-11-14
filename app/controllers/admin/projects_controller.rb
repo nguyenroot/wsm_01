@@ -2,7 +2,8 @@ class Admin::ProjectsController < ApplicationController
   before_action :load_project, except: [:index, :new, :create]
 
   def index
-    @projects = Project.page(params[:page]).per Settings.pagination.per_page
+    @projects = Project.newest.page(params[:page]).
+      per Settings.pagination.per_page
   end
 
   def new

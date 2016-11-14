@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   namespace :admin do
-    root "projects#index"
     resources :projects
+    resources :project_members
   end
 
   root "static_pages#home"

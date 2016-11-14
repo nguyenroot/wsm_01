@@ -9,6 +9,13 @@ en:
   form_error_messages: "The form contains %{plural}."
   help: "HELP"
   admin:
+    project_members:
+      form:
+        cancel_button: "Cancel"
+        form: "Form"
+        create_project: "Create Project"
+      new:
+        create_project_members: "Create Project Members"
     projects:
       index:
         form: "Form :"
