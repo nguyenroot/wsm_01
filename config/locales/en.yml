@@ -127,7 +127,32 @@ en:
     edit:
       edit_project: "Edit Project"
       submit_button: "Edit Project"
+      create_project: "Create Project"
+      create_button: "Create"
+    edit:
+      edit_project: "Edit Project"
+      save_button: "Save"
+  project_members:
+    form:
+      cancel_button: "Cancel"
+      form: "Form"
 
+    new:
+      create_project_members: "Create Project Members"
+      create_button: "Create Project Member"
+    index:
+      form: "Form :"
+      user: "User"
+      project_role: "Project Role"
+      actions: "Actions"
+      show: "Show"
+      new_project: "New Project Member"
+    edit:
+      edit_project_member: "Edit Project Member"
+      new_project_member: "New Project Member"
+      save_button: "Edit Project Member"
+    project_member:
+      delete_project_confirm: "Are you sure you want to delete this project?"
   admin:
     workspaces:
       create_workspace: "Create_workspace"

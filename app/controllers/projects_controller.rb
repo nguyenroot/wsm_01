@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
-  before_action :load_project, except: [:index, :new, :create]
-
+  before_action :load_projects, except: [:index, :new, :create]
+  before_action :load_project, only: [:show]
   def index
     @projects = Project.newest.page(params[:page]).per Settings.pagination.project_per_page
   end
@@ -10,6 +10,9 @@ class ProjectsController < ApplicationController
   end
 
   def edit
+  end
+
+  def show
   end
 
   def create
@@ -52,5 +55,9 @@ class ProjectsController < ApplicationController
       flash.now[:danger] = t "flash.danger.project_not_found"
       redirect_to projects_path
     end
+  end
+
+  def load_projects
+    @projects = Project.all
   end
 end

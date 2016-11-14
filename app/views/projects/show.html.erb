@@ -1,0 +1,79 @@
+<div class="content">
+  <div class="women_main">
+    <div class="grids">
+      <div class="panel panel-widget forms-panel">
+        <div class="forms">
+          <div class="form-grids widget-shadow" data-example-id="basic-forms">
+            <div class="form-body">
+              <div class="well well-lg">
+                <div class="row">
+                  <div class="col-md-12 padding-0 margin-bottom-20">
+                    <div class="col-md-4">
+                      <h3 class="animated fadeInLeft">Detail Project</h3>
+                      <p>
+                        <strong>
+                          <span class="translation_missing">
+                            <%= t ".name" %>
+                          </span>
+                        </strong>
+                        <%= @project.name %>
+                      </p>
+                      <p>
+                        <strong>
+                          <span class="translation_missing">
+                            <%= t ".abbrevation" %>
+                          </span>
+                        </strong>
+                        <%= @project.abbreviation %>
+                      </p>
+                      <p>
+                        <strong>
+                          <span class="translation_missing">
+                            <%= t ".start_at" %>
+                          </span>
+                        </strong>
+                        <%= @project.start_date %>
+                      </p>
+                      <p>
+                        <strong>
+                          <span class="translation_missing" >
+                            <%= t ".end_at" %>
+                          </span>
+                        </strong>
+                        <%= @project.end_date %>
+                      </p>
+                      <%= link_to edit_project_member_path,
+                        class: "btn btn-info margin-top-fix" do %>
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <%= t ".update_project_member" %>
+                      <% end %>
+                    </div>
+                    <div class="col-md-8">
+                      <table id="table_list"
+                      class="table table-striped table-bordered">
+                        <thead class="thead-inverse">
+                          <tr>
+                            <th class="text-center"><%= t ".user_id" %></th>
+                            <th class="text-center"><%= t ".email" %></th>
+                          </tr>
+                        </thead>
+                        <tbody class="subject-index">
+                          <% @project.users.each do |user| %>
+                            <tr>
+                              <td class="text-center"><%= user.name %></td>
+                              <td class="text-center"><%= user.email %></td>
+                            </tr>
+                          <% end %>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

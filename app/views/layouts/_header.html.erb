@@ -36,6 +36,57 @@
       </div>
       <div class="clearfix"></div>
     </div>
+    <div class="header_bg">
+      <div class="header">
+        <div class="head-t">
+          <div class="header_left">
+            <%= link_to image_tag("logo.png", class:"img-responsive"),
+              root_path %>
+            <div class="header_right">
+              <div class="rgt-bottom">
+                <div class="log">
+                  <div class="login">
+                    <div id="loginContainer">
+                      <%= link_to t("login"), "#", id:"loginButton" %>
+                      <div id="loginBox" style="display: none;">
+                        <form id="loginForm">
+                          <fieldset id="body">
+                            <fieldset>
+                              <label for="email"><%= t ".email" %></label>
+                              <input type="text" name="email" id="email">
+                            </fieldset>
+                            <fieldset>
+                              <label for="password">
+                                <%= t ".password" %>
+                              </label>
+                              <input type="password" name="password"
+                                id="password">
+                            </fieldset>
+                            <input type="submit" id="login" value="Sign in">
+                            <label for="checkbox">
+                              <input type="checkbox" id="checkbox">
+                                <i><%= t ".remember" %></i>
+                            </label>
+                          </fieldset>
+                          <span><%= link_to t(".forgotpassword"), "#" %>
+                          </span>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reg">
+                  <%= link_to t(".register"), "#" %>
+                </div>
+                <div class="clearfix"> </div>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="inner-content">
       <div class="sidebar-menu">
         <header class="logo1">

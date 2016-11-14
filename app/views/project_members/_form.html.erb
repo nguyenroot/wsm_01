@@ -1,0 +1,67 @@
+<div class="content">
+  <div class="women_main">
+    <div class="grids">
+      <div class="panel panel-widget forms-panel">
+        <div class="forms">
+          <div class="form-grids widget-shadow" data-example-id="basic-forms">
+            <div class="form-title">
+              <h4><%= yield(:modal_title) %></h4>
+            </div>
+            <div class="form-body">
+              <%= simple_form_for @project_member do |f| %>
+                <table id="table_list"
+                  class="table table-striped table-bordered">
+                  <thead class="thead-inverse">
+                    <tr>
+
+                      <div class="form-group">
+                        <%= f.label :project_id %>
+                        <%= f.select :project_id,
+                          @projects.collect {|project| [project.name,
+                          project.id]}, {}, {class: "form-control"} %>
+                      </div>
+                    </tr>
+
+                    <tr>
+                      <th class="text-center"><%= t ".user" %></th>
+                      <th class="text-center"><%= t ".project_role" %></th>
+                      <th class="text-center" colspan="2"><%= t ".actions" %>
+                      </th>
+                    </tr>
+                    <% @users.each do |user| %>
+                      <tr>
+                        <td>
+                          <%= f.text_field :user_id, value: user.name,
+                            disabled: true, multiple: true %>
+                        </td>
+                        <%= simple_form_for @project_member do |f| %>
+                          <td>
+                            <div class="form-group">
+                              <%= f.select :project_role,
+                                ProjectMember.project_roles.keys.to_a, {},
+                                {class: "form-control"} %>
+                            </div>
+                          </td>
+                        <% end %>
+                        <td class="text-center">
+                          <%= f.check_box :user_id, {checked: false,
+                            multiple: true}, user.id, nil %>
+                        </td>
+                      </tr>
+                    <% end %>
+                  </thead>
+                </table>
+                <div class="modal-footer">
+                  <span class="pull-right">
+                    <%= f.submit yield(:submit_button),
+                      class: "btn btn-default" %>
+                  </span>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

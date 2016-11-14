@@ -1,0 +1,21 @@
+<% @project_members.each do |project_member| %>
+  <tr>
+    <td class="text-center"><%= project_member.project.name %></td>
+    <td class="text-center"><%= project_member.user.name %></td>
+    <td class="text-center"><%= project_member.project_role %></td>
+    <td class="text-center">
+      <div class="btn-group" role="group">
+        <%= link_to image_tag("edit.png",
+          class:"img-responsi"),
+          edit_project_member_path(project_member), id: "edit_admin_project"%>
+      </div>
+    </td>
+    <td class="text-center">
+      <div class="btn-group" role="group">
+        <%= link_to image_tag("delete.png",
+          class:"img-responsi"), project_member_path(project_member.id),
+          method: :delete, data: {confirm: t(".delete_project_confirm")}%>
+      </div>
+    </td>
+  </tr>
+<% end %>
