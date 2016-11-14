@@ -16,6 +16,12 @@ en:
         create_project: "Create Project"
       new:
         create_project_members: "Create Project Members"
+      index:
+        form: "Form :"
+        user: "User"
+        project_role: "Project Role"
+        actions: "Actions"
+        show: "Show"
     projects:
       index:
         form: "Form :"
