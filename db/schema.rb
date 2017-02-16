@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161115065715) do
+ActiveRecord::Schema.define(version: 20170216084910) do
 
   create_table "admins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "email",                  default: "", null: false
@@ -43,6 +43,14 @@ ActiveRecord::Schema.define(version: 20161115065715) do
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.index ["company_id"], name: "index_departments_on_company_id", using: :btree
+  end
+
+  create_table "pages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.string   "path"
+    t.string   "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "positions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -79,6 +87,14 @@ ActiveRecord::Schema.define(version: 20161115065715) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.index ["company_id"], name: "index_projects_on_company_id", using: :btree
+  end
+
+  create_table "rubypress_pages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.string   "path"
+    t.string   "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "skills", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

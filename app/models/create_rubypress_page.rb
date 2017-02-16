@@ -1,0 +1,2 @@
+class CreateRubypressPage < ApplicationRecord
+end

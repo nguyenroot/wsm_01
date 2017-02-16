@@ -1,0 +1,2 @@
+class RubypressPage < ApplicationRecord
+end
